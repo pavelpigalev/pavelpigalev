@@ -1,0 +1,332 @@
+AWSTATS DATA FILE 7.0 (build 1.971)
+# If you remove this file, all statistics for date 201404 will be lost/reset.
+# Last config file used to build this data file was /etc/awstats/awstats.pavelpigalev.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 1996                
+POS_TIME 2665                
+POS_VISITOR 6905                
+POS_DAY 8370                
+POS_DOMAIN 3230                
+POS_LOGIN 3455                
+POS_ROBOT 3610                
+POS_WORMS 4036                
+POS_EMAILSENDER 4167                
+POS_EMAILRECEIVER 4310                
+POS_SESSION 8864                
+POS_SIDER 9011                
+POS_FILETYPES 4445                
+POS_DOWNLOADS 4526                
+POS_OS 4574                
+POS_BROWSER 4704                
+POS_SCREENSIZE 4978                
+POS_UNKNOWNREFERER 5052                
+POS_UNKNOWNREFERERBROWSER 5163                
+POS_ORIGIN 5269                
+POS_SEREFERRALS 5401                
+POS_PAGEREFS 5545                
+POS_SEARCHWORDS 5693                
+POS_KEYWORDS 5845                
+POS_MISC 2329                
+POS_ERRORS 5904                
+POS_CLUSTER 3311                
+POS_SIDER_404 5992                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20140501033301 1 0 31822818230
+FirstTime 20140401033350
+LastTime 20140430213224
+LastUpdate 20140501043205 1 0 0 0 0
+TotalVisits 37                  
+TotalUnique 37                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 37                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 1 1 218 5 6 1480
+1 3 3 654 2 3 730
+2 0 0 0 2 3 726
+3 2 2 436 1 2 512
+4 1 1 218 1 2 512
+5 1 1 218 2 2 521
+6 4 4 872 2 4 1020
+7 3 3 654 4 4 1185
+8 0 0 0 6 8 2111
+9 4 4 872 0 2 584
+10 0 0 0 2 2 630
+11 0 0 0 1 2 508
+12 0 0 0 1 1 218
+13 0 0 0 1 1 330
+14 1 1 218 3 4 948
+15 1 1 218 0 0 0
+16 1 1 218 1 1 218
+17 2 2 436 10 11 3320
+18 7 7 1526 5 8 1310
+19 1 1 218 3 3 654
+20 2 2 436 1 1 218
+21 2 2 436 3 5 1084
+22 2 2 436 1 1 0
+23 1 1 218 0 0 0
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 39 39 8502
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 9
+wget 7 1526 20140418195552 0
+netcraft 7 872 20140414163852 0
+bot[\s_+:,\.\;\/\\-] 5 436 20140425213525 0
+googlebot 4 872 20140420181035 0
+baiduspider 3 654 20140412004215 0
+surveybot 2 436 20140421064230 0
+yandex 2 436 20140414202537 0
+robot 1 218 20140418011540 0
+crawl 1 218 20140412115806 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 1
+html 39 8502 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS 10
+winxp 2
+winlong 1
+win98 1
+linux 5
+winvista 1
+win7 3
+macosx 3
+winme 1
+win2003 1
+Unknown 21
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 15
+chrome6.0.427.0 1
+msie6.0 4
+msie8.0 1
+chrome21.0.1180.90 2
+chrome21.0.1180.75 1
+firefox1.0 1
+firefox22.0 1
+firefox14.0.1 1
+firefox23.0 1
+curl 1
+Unknown 21
+chrome32.0.1700.107 1
+safari5.0.2 1
+firefox3.6.23 1
+firefox16.0.1 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 1
+NerdyBot 20140430213224
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+NerdyBot 20140430213224
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 35 35
+From1 0 0
+From2 0 0
+From3 0 0
+From4 4 4
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 1
+404 44 13151
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 14
+//components/com_community/index.html 3 -
+/wp-admin/ 1 -
+/robots.txt 18 -
+/administrator/ 1 -
+/blog/wp-admin/ 1 -
+/admin.php 1 -
+/forum/ 1 http://pavelpigalev.com/forum/
+/administrator/index.php 12 http://PAVELPIGALEV.com/administrator/index.php
+/wp-content/plugins/braille/braille.php 1 http://pavelpigalev.com/wp-content/plugins/braille/braille.php
+/administrator/components/com_extplorer/style/opacity.js 1 -
+/wp-login.php 1 -
+//wp-login.php 1 -
+/wp-content/plugins/tell-a-friend/tell-a-friend.php 1 http://pavelpigalev.com/wp-content/plugins/tell-a-friend/tell-a-friend.php
+/wordpress/wp-admin/ 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 37
+54.219.140.148 3 3 654 20140426091659
+23.251.149.46 1 1 218 20140404193143
+107.178.212.232 1 1 218 20140407062751
+69.58.178.56 1 1 218 20140409034611
+23.251.159.182 1 1 218 20140424171725
+107.178.209.214 1 1 218 20140414224130
+162.13.124.212 1 1 218 20140411060322
+117.175.109.38 1 1 218 20140418181830
+107.178.212.255 1 1 218 20140430213224
+23.20.250.168 1 1 218 20140419055607
+107.178.220.62 1 1 218 20140407182407
+195.54.166.10 1 1 218 20140423212355
+107.178.220.151 1 1 218 20140416183855
+74.52.245.146 1 1 218 20140401033350
+91.217.90.241 1 1 218 20140423011830
+95.65.30.29 1 1 218 20140417235517
+107.178.222.17 1 1 218 20140413220720
+96.227.124.37 1 1 218 20140410155553
+23.251.151.244 1 1 218 20140404073822
+107.178.213.228 1 1 218 20140425181042
+108.59.84.223 1 1 218 20140404070545
+109.173.25.119 1 1 218 20140424200244
+64.191.7.78 1 1 218 20140428065300
+107.178.213.2 1 1 218 20140410182900
+107.178.214.40 1 1 218 20140409181932
+94.242.255.240 1 1 218 20140425145209
+107.178.211.212 1 1 218 20140413000445
+107.178.218.174 1 1 218 20140411065941
+23.236.53.83 1 1 218 20140408173822
+107.178.212.79 1 1 218 20140427041016
+108.59.80.205 1 1 218 20140405011221
+107.178.214.64 1 1 218 20140424090703
+5.199.142.250 1 1 218 20140423183747
+200.46.73.42 1 1 218 20140422012032
+23.251.159.233 1 1 218 20140430073115
+107.178.220.169 1 1 218 20140415163710
+23.251.156.201 1 1 218 20140411204358
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 23
+20140401 1 1 218 1
+20140404 3 3 654 3
+20140405 1 1 218 1
+20140407 2 2 436 2
+20140408 1 1 218 1
+20140409 2 2 436 2
+20140410 2 2 436 2
+20140411 3 3 654 3
+20140413 2 2 436 2
+20140414 1 1 218 1
+20140415 1 1 218 1
+20140416 1 1 218 1
+20140417 1 1 218 1
+20140418 1 1 218 1
+20140419 1 1 218 1
+20140422 1 1 218 1
+20140423 3 3 654 3
+20140424 3 3 654 3
+20140425 2 2 436 2
+20140426 3 3 654 1
+20140427 1 1 218 1
+20140428 1 1 218 1
+20140430 2 2 436 2
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 1
+0s-30s 37
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 1
+/ 39 8502 37 37
+END_SIDER

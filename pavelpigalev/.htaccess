@@ -1,0 +1,22 @@
+Options -Indexes
+
+DirectoryIndex index.html index.php
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
+RewriteBase /
+
+Options +FollowSymlinks
+
+    # Слеш на конце, разделы и статьи
+    RewriteRule ^(\w+)$      $1/ [QSA,R=301,L]
+    RewriteRule ^(\w+(/[\w-_]+)+)$      $1/ [R=301,QSA,L]
+
+
+    #################### MAIN DISPATCHER ############################
+    #################################################################
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . index.php [QSA,L]
+</IfModule>
