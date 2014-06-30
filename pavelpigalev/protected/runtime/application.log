@@ -40,3 +40,63 @@ Stack trace:
 REQUEST_URI=/site/contact/
 HTTP_REFERER=http://pp:8888/site/page/?view=about
 ---
+2014/07/01 00:44:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index2".' in /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CController.php(270): CController->missingAction('index2')
+#1 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CWebApplication.php(282): CController->run('index2')
+#2 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index2')
+#3 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/pavelpigalev/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index2/
+---
+2014/07/01 00:45:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index2".' in /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CController.php(270): CController->missingAction('index2')
+#1 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CWebApplication.php(282): CController->run('index2')
+#2 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index2')
+#3 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/pavelpigalev/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index2/
+---
+2014/07/01 00:45:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index2".' in /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CController.php(270): CController->missingAction('index2')
+#1 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CWebApplication.php(282): CController->run('index2')
+#2 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index2')
+#3 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/pavelpigalev/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index2/
+---
+2014/07/01 00:45:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index2".' in /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CController.php(270): CController->missingAction('index2')
+#1 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CWebApplication.php(282): CController->run('index2')
+#2 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index2')
+#3 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/pavelpigalev/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index2/
+---
+2014/07/01 00:46:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index2".' in /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CController.php(270): CController->missingAction('index2')
+#1 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CWebApplication.php(282): CController->run('index2')
+#2 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index2')
+#3 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/pavelpigalev/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index2/
+---
+2014/07/01 00:46:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index2".' in /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CController.php(270): CController->missingAction('index2')
+#1 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CWebApplication.php(282): CController->run('index2')
+#2 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index2')
+#3 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/PhpStorm/pavelpigalev/pavelpigalev/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index2/
+---

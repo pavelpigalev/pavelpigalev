@@ -12,7 +12,7 @@ return array(
 
     'defaultController' => 'site/index',
 
-    'sourceLanguage'=>'en',
+    'sourceLanguage'=>'ru',
 
     'preload'=>array('log'),
 
@@ -75,7 +75,7 @@ return array(
         ),
 
         'errorHandler' => array(
-            'errorAction' => 'site/error',
+            'errorAction' => 'error',
         ),
 
         'log'          => array(
