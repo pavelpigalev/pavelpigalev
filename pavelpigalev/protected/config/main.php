@@ -1,9 +1,4 @@
 <?php
-// uncomment the following to define a path alias
-// Yii::setPathOfAlias('local','path/to/local-folder');
-
-// This is the main Web application configuration. Any writable
-// CWebApplication properties can be configured here.
 $basePath = dirname(__FILE__).DIRECTORY_SEPARATOR.'..';
 return array(
     'basePath'=>$basePath,
@@ -47,23 +42,9 @@ return array(
             ),
         ),
 
-        //  local database
-        'db'         => array(
-            'connectionString'      => 'mysql:host=localhost;dbname=pp',
-            'emulatePrepare'        => true,
-            'username'              => 'root',
-            'password'              => 'mysqlpassword',
-            'charset'               => 'utf8',
-            'class'                 => 'MyCDbConnection',
-            'schemaCachingDuration' => 86400
-        ),
+        'db' => array(),
 
-        'search'     => array(
-            'class'        => 'application.lib.DGSphinxSearch.DGSphinxSearch',
-            'server'       => '127.0.0.1',
-            'port'         => 3312,
-            'maxQueryTime' => 3000,
-        ),
+        'search'     => array(),
 
         'cache'      => array(
             'class' => 'system.caching.CMemCache',
@@ -92,8 +73,6 @@ return array(
             ),
         ),
     ),
-    // application-level parameters that can be accessed
-    // using Yii::app()->params['paramName']
     'params'=>array(
         'adminEmail'=>'pavel.pigalev@gmail.com',
         'webRoot' => $basePath . DIRECTORY_SEPARATOR . '..',
