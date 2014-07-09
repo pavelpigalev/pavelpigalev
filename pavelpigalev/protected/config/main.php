@@ -1,36 +1,30 @@
 <?php
-$basePath = dirname(__FILE__).DIRECTORY_SEPARATOR.'..';
+$basePath = dirname(__FILE__) . DIRECTORY_SEPARATOR . '..';
 return array(
-    'basePath'=>$basePath,
-
-    'name'=>'pavelpigalev.com',
-
+    'basePath'          => $basePath,
+    'name'              => 'pavelpigalev.com',
     'defaultController' => 'main/index',
-
-    'sourceLanguage'=>'ru',
-
-    'preload'=>array('log'),
-
-    'import'=>array(
-        'application.components.*',
+    'sourceLanguage'    => 'ru',
+    'preload'           => array('log'),
+    'import'            => array(
+        'application.libraries.*',
         'application.models.*',
+        'application.components.*',
+        'application.components.helpers.*',
     ),
-
-    'modules'=>array(
-        'admin'=> array(
+    'modules'           => array(
+        'admin' => array(
             'defaultController' => 'index',
         ),
     ),
-
-    'components'   => array(
-        'user'       => array(
+    'components'        => array(
+        'user'         => array(
             'allowAutoLogin' => true,
             'class'          => 'MyCWebUser',
             'loginUrl'       => array('auth/login'),
             'guestName'      => 'Гость',
         ),
-
-        'urlManager' => array(
+        'urlManager'   => array(
             'urlFormat'      => 'path',
             'caseSensitive'  => false,
             'showScriptName' => false,
@@ -41,24 +35,17 @@ return array(
                 '<controller:\w+>/<action:\w+>'          => '<controller>/<action>',
             ),
         ),
-
-        'db' => array(),
-
-        'search'     => array(),
-
-        'cache'      => array(
+        'db'           => array(),
+        'search'       => array(),
+        'cache'        => array(
             'class' => 'system.caching.CMemCache',
         ),
-
-
         'authManager'  => array(
             'class' => 'MyPhpAuthManager'
         ),
-
         'errorHandler' => array(
             'errorAction' => 'error',
         ),
-
         'log'          => array(
             'class'  => 'CLogRouter',
             'routes' => array(
@@ -73,9 +60,10 @@ return array(
             ),
         ),
     ),
-    'params'=>array(
-        'adminEmail'=>'pavel.pigalev@gmail.com',
-        'webRoot' => $basePath . DIRECTORY_SEPARATOR . '..',
-        'debug' => false,
+    'params'            => array(
+        'adminEmail' => 'pavel.pigalev@gmail.com',
+        'webRoot'    => $basePath . DIRECTORY_SEPARATOR . '..',
+        'pathToLib'  => $basePath . '/libraries',
+        'debug'      => false,
     ),
 );
