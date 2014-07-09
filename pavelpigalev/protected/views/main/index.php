@@ -1,7 +1,7 @@
 <?php
 /* @var $this MainController */
 
-$this->pageTitle = $this->_app->name . '| ' . ($this->_app->params['debug']) ? 'development' : 'production';
+$this->pageTitle = $this->_app->name . ' | ' . (($this->_app->params['debug']) ? 'development' : 'production');
 
 ?>
 
