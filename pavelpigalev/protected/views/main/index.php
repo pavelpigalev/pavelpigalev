@@ -9,6 +9,7 @@ $this->pageTitle = $this->_app->name . ' | ' . (($this->_app->params['debug']) ?
 
 
 <?
+App::pr('development');
 App::pr(Ip::instance()->getIp());
 App::pr(Ip::instance()->getGeo());
 ?>
