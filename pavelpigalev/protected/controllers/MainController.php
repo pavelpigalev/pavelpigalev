@@ -1,6 +1,6 @@
 <?php
 
-class SiteController extends MyController
+class MainController extends MyController
 {
 
     public function actionIndex()

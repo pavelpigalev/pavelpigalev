@@ -31,10 +31,10 @@
 	<div id="mainmenu">
 		<? $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
-				array('label'=>'Главная', 'url'=>array('/site/index')),
-				array('label'=>'Обо мне', 'url'=>array('/site/about')),
-				array('label'=>'Опыт', 'url'=>array('/site/experience')),
-				array('label'=>'Портфолио', 'url'=>array('/site/portfolio')),
+				array('label'=>'Главная', 'url'=>array('/main/index')),
+				array('label'=>'Обо мне', 'url'=>array('/main/about')),
+				array('label'=>'Опыт', 'url'=>array('/main/experience')),
+				array('label'=>'Портфолио', 'url'=>array('/main/portfolio')),
 				array('label'=>'Код', 'url'=>array('/code/index')),
 			),
 		)); ?>
