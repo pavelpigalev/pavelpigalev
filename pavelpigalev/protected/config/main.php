@@ -5,7 +5,7 @@ return array(
 
     'name'=>'pavelpigalev.com',
 
-    'defaultController' => 'site/index',
+    'defaultController' => 'main/index',
 
     'sourceLanguage'=>'ru',
 
@@ -76,6 +76,6 @@ return array(
     'params'=>array(
         'adminEmail'=>'pavel.pigalev@gmail.com',
         'webRoot' => $basePath . DIRECTORY_SEPARATOR . '..',
-        'environment' => 'production',
+        'debug' => false,
     ),
 );

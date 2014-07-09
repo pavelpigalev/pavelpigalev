@@ -3,3 +3,4 @@ pavelpigalev/protected/config/local.php
 pavelpigalev/protected/config/production.php
 pavelpigalev/assets/
 pavelpigalev/protected/runtime/
+*.log
