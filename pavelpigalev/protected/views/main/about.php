@@ -1,1 +1,1 @@
-Обо мне
+You will know something about me

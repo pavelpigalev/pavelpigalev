@@ -1,5 +1,6 @@
 <?php
-
+error_reporting(E_ALL);
+ini_set('display_errors', 'on');
 // change the following paths if necessary
 $yii = dirname(__FILE__) . '/../framework/yii.php';
 if (file_exists(dirname(__FILE__) . '/protected/config/local.php')) {

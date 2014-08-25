@@ -1,12 +1,14 @@
 <?php
 /* @var $this SiteController */
 /* @var $error array */
-
+FrontHelper::o()->addLess('error.less');
 $this->pageTitle=$this->_app->name . ' - Ошибка';
 ?>
 
-<h2>Ошибка #<?= $code; ?></h2>
+<div id="error">
+    <h2>ERROR <span>#<?= $code; ?></span></h2>
 
-<div class="error">
-<?= CHtml::encode($message); ?>
+    <div class="message">
+        <?= CHtml::encode($message); ?>
+    </div>
 </div>

@@ -1,62 +1,91 @@
 <?
 /* @var $this MyController */
+
+FrontHelper::o()->addLess('layout/layout.less');
+
+$baseUrl = $this->_app->request->baseUrl;
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="language" content="ru" />
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="language" content="ru"/>
 
-	<!-- blueprint CSS framework -->
-	<link rel="stylesheet" type="text/css" href="<?= $this->_app->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
-	<link rel="stylesheet" type="text/css" href="<?= $this->_app->request->baseUrl; ?>/css/print.css" media="print" />
-	<!--[if lt IE 8]>
-	<link rel="stylesheet" type="text/css" href="<?= $this->_app->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-	<![endif]-->
+        <title><?= CHtml::encode($this->pageTitle); ?></title>
+    </head>
 
-	<link rel="stylesheet" type="text/css" href="<?= $this->_app->request->baseUrl; ?>/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="<?= $this->_app->request->baseUrl; ?>/css/form.css" />
+    <body>
+    <div id="header">
+        <div id="header-wrapper">
+            <div id="logo"><?= CHtml::encode($this->_app->name); ?></div>
 
-	<title><?= CHtml::encode($this->pageTitle); ?></title>
-</head>
+            <? $this->widget('zii.widgets.CMenu', array(
+                'items'       => array(
+                    array(
+                        'label'       => 'MAIN',
+                        'url'         => array('/main/index'),
+                        'itemOptions' => array(
+                            'class' => 'menu-item'
+                        )
+                    ),
+                    array(
+                        'label'       => 'ABOUT',
+                        'url'         => array('/main/about'),
+                        'itemOptions' => array(
+                            'class' => 'menu-item'
+                        )
+                    ),
+                    array(
+                        'label'       => 'EXPERIENCE',
+                        'url'         => array('/main/experience'),
+                        'itemOptions' => array(
+                            'class' => 'menu-item'
+                        )
+                    ),
+                    array(
+                        'label'       => 'PORTFOLIO',
+                        'url'         => array('/main/portfolio'),
+                        'itemOptions' => array(
+                            'class' => 'menu-item'
+                        )
+                    ),
+                    array(
+                        'label'       => 'CODE',
+                        'url'         => array('/code/index'),
+                        'itemOptions' => array(
+                            'class' => 'menu-item'
+                        )
+                    )
+                ),
+                'htmlOptions' => array(
+                    'id' => 'mainmenu'
+                )
+            ));
+            ?>
+        </div>
+    </div>
 
-<body>
+    <div id="container">
+        <? if (isset($this->breadcrumbs)): ?>
+            <? $this->widget('zii.widgets.CBreadcrumbs', array('links' => $this->breadcrumbs,)); ?>
+        <? endif ?>
 
-<div class="container" id="page">
+        <?= $content; ?>
 
-	<div id="header">
-		<div id="logo"><?= CHtml::encode($this->_app->name); ?></div>
-	</div>
+        <div class="clear"></div>
 
-	<div id="mainmenu">
-		<? $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'Главная', 'url'=>array('/main/index')),
-				array('label'=>'Обо мне', 'url'=>array('/main/about')),
-				array('label'=>'Опыт', 'url'=>array('/main/experience')),
-				array('label'=>'Портфолио', 'url'=>array('/main/portfolio')),
-				array('label'=>'Код', 'url'=>array('/code/index')),
-			),
-		)); ?>
-	</div>
-    
-	<? if(isset($this->breadcrumbs)):?>
-		<? $this->widget('zii.widgets.CBreadcrumbs', array(
-			'links'=>$this->breadcrumbs,
-		)); ?>
-	<? endif?>
+    </div>
+    <div id="footer">
+    </div>
 
-	<?= $content; ?>
-
-	<div class="clear"></div>
-
-	<div id="footer">
-		Copyright &copy; <?= date('Y'); ?> by My Company.<br/>
-		All Rights Reserved.<br/>
-		<?= Yii::powered(); ?>
-	</div>
-
-</div>
-
-</body>
-</html>
+    </body>
+    </html>
+<?
+$cs = $this->_app->getClientScript();
+if ($cssFile = FrontHelper::o()->getCssFile()) {
+    $cs->registerCssFile($cssFile);
+}
+if ($jsFile = FrontHelper::o()->getJsFile()) {
+    $cs->registerScriptFile($jsFile);
+}
+?>

@@ -2,9 +2,9 @@
 $basePath = dirname(__FILE__) . DIRECTORY_SEPARATOR . '..';
 return array(
     'basePath'          => $basePath,
-    'name'              => 'pavelpigalev.com',
+    'name'              => 'PavelPigalev',
     'defaultController' => 'main/index',
-    'sourceLanguage'    => 'ru',
+    'sourceLanguage'    => 'en',
     'preload'           => array('log'),
     'import'            => array(
         'application.libraries.*',
