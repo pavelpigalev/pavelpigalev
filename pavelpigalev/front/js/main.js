@@ -38,18 +38,17 @@ function MainPage() {
         lCss.left = -((w - ws.w) / 2);
         lCss.top = -((h - ws.h) / 2);
 
-        console.log(leftText.height());
-        /*if (ws.r < 0.7 && ws.h > 450) {
+        if (ws.r < 0.7 && ws.h > 450) {
             ltCss['margin-left'] = -lCss.left + (ws.w / 7);
             ltCss['margin-top'] = (142 - leftText.height()) * 0.8 + (h / 4.5) + ((h - ws.h) / 5);
             rtCss['margin-right'] = (w - ws.w + lCss.left) + ((ws.w - rightText.width()) / 3.5);
             rtCss['margin-top'] = ltCss['margin-top']  + leftText.height()*0.93;
-        } else {*/
+        } else {
             ltCss['margin-left'] = -lCss.left + ((ws.w - leftText.width()) / 2) - (rightText.width() / 28);
             ltCss['margin-top'] = (h - ws.h) / 2 + h/4;
             rtCss['margin-right'] = (w - ws.w + lCss.left) + ((ws.w - rightText.width()) / 2);
             rtCss['margin-top'] = ltCss['margin-top']  + leftText.height()*0.93;
-        /*}*/
+        }
 
 
         layers.css(lCss);
