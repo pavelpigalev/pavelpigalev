@@ -9,11 +9,17 @@ $this->pageTitle = $this->_app->name . ' | ' . (($this->_app->params['debug']) ?
 FrontHelper::o()->addLess('main');
 ?>
 <script>
-    $(function () {
-        var mainPage = new MainPage();
+    $(function() {
+       var loading = new Loading(), mainPage = new MainPage();
+        loading.init();
         mainPage.init(<?=$ratio;?>);
+
+        $(window).load(function(){
+            loading.hide();
+        });
     });
 </script>
+<div id="loading-page"></div>
 <div id="mountain-layers">
     <div id="layers">
         <? foreach ($layers as $layer) : ?>

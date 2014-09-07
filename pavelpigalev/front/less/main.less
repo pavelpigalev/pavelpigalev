@@ -1,6 +1,22 @@
 @max-width1: 1200px;
 @max-width2: 600px;
 
+#loading-page {
+  position: absolute;
+  overflow: hidden;
+  z-index: 9999999;
+  background: #dddce1 url('/front/img/moutainsbg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover; /* WebKit */
+  -moz-background-size: cover;    /* Mozilla */
+  -o-background-size: cover;      /* Opera */
+  background-size: cover;
+
+  & p {
+    position: absolute;
+    font-size: 50px;
+  }
+}
+
 #mountain-layers {
   position: relative;
   overflow: hidden;

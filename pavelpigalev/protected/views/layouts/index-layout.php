@@ -2,6 +2,8 @@
 /* @var $this MyController */
 
 FrontHelper::o()->addLess('layout/index-layout.less');
+FrontHelper::o()->addJs('myWindow.js');
+FrontHelper::o()->addJs('loading.js');
 FrontHelper::o()->addJs('main.js');
 $this->_app->clientScript->registerCoreScript('jquery');
 

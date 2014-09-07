@@ -7,9 +7,9 @@ class MainController extends MyController
     {
         $this->layout = '//layouts/index-layout';
 
-        //$this->_app->cache->delete('mainPageCache');
+        $this->_app->cache->delete('mainPageCache');
 
-        //$cache = $this->_app->cache->get('mainPageCache');
+        $cache = $this->_app->cache->get('mainPageCache');
         $cache = false;
 
         if (!$cache) {
@@ -51,7 +51,7 @@ class MainController extends MyController
                 'layers' => $layers
             );
 
-            //$this->_app->cache->set('mainPageCache', $cache);
+            $this->_app->cache->set('mainPageCache', $cache);
         }
 
         $this->render('index',array(
