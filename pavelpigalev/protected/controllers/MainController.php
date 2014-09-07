@@ -10,7 +10,6 @@ class MainController extends MyController
         $this->_app->cache->delete('mainPageCache');
 
         $cache = $this->_app->cache->get('mainPageCache');
-        $cache = false;
 
         if (!$cache) {
             $layers = array(
