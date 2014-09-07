@@ -1,17 +1,35 @@
-<?php
-/* @var $this MainController */
+<?
+/**
+ * @var $this MainController
+ * @var $ratio float
+ * @var $layers array
+ */
 
 $this->pageTitle = $this->_app->name . ' | ' . (($this->_app->params['debug']) ? 'development' : 'production');
 FrontHelper::o()->addLess('main');
 ?>
-
-    <h1>Welcome to
-        <u><?= (($this->_app->params['debug']) ? 'development' : 'production') ?></u>
-        version of my site
-    </h1>
-
-
-<?
-/*App::pr(Ip::instance()->getIp());
-App::pr(Ip::instance()->getGeo());*/
-?>
+<script>
+    $(function () {
+        var mainPage = new MainPage();
+        mainPage.init(<?=$ratio;?>);
+    });
+</script>
+<div id="mountain-layers">
+    <div id="layers">
+        <? foreach ($layers as $layer) : ?>
+            <div class="layer">
+                <?
+                switch ($layer['type']) {
+                    case 'img':
+                        echo '<img src="' . $layer['src'] . '">';
+                        break;
+                    case 'html':
+                    default:
+                        echo $layer['src'];
+                        break;
+                }
+                ?>
+            </div>
+        <? endforeach; ?>
+    </div>
+</div>

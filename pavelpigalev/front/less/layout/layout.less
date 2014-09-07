@@ -8,6 +8,11 @@
 }
 
 body {
+  background: #dddce1 url('/front/img/moutainsbg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover; /* WebKit */
+  -moz-background-size: cover;    /* Mozilla */
+  -o-background-size: cover;      /* Opera */
+  background-size: cover;
   padding-top: @top-menu-height;
   .min-width();
 }
@@ -23,17 +28,24 @@ div#header {
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 0 25px;
     font-family: 'merriweather_bold';
     padding-top: 7px;
     .border-box();
 
-    div#logo {
+    a#logo {
+      display: block;
       float: left;
       font-size: 21px;
       text-transform: uppercase;
+      color: #25323f;
+
+      &:hover {
+        color: #c00000;
+        transition: color 100ms linear;
+      }
     }
 
     ul#mainmenu {

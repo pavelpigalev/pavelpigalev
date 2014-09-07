@@ -2,7 +2,7 @@
 
 class MyController extends CController
 {
-    public $layout = '//layouts/column1';
+    public $layout = '//layouts/main';
 
     public $menu = array();
 
@@ -14,5 +14,11 @@ class MyController extends CController
     public function init() {
         $this->_app = Yii::app();
         parent::init();
+    }
+
+    public function missingAction($actionID)
+    {
+        throw new CHttpException(404,Yii::t('yii','Page "{action}" was not found.',
+            array('{action}'=>$actionID==''?$this->defaultAction:$actionID)));
     }
 }

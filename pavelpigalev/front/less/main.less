@@ -1,4 +1,69 @@
-h1 {
-  text-align: center;
-  margin-top: 100px;
+@max-width1: 1200px;
+@max-width2: 600px;
+
+#mountain-layers {
+  position: relative;
+  overflow: hidden;
+
+  div#layers {
+    position: absolute;
+
+    div.layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+
+      & .text {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        line-height: 142px;
+        font-size: 170px;
+        font-family: 'merriweather_bold';
+
+        @media screen and (max-width: @max-width1) {
+          line-height: 100px;
+          font-size: 119px;
+        }
+        @media screen and (max-width: @max-width2) {
+          line-height: 75px;
+          font-size: 85px;
+        }
+
+        &.text-left {
+          left: 0;
+        }
+        &.text-right {
+          right: 0;
+          text-align: right;
+
+          & .small {
+            line-height: 39px;
+            font-size: 46px;
+            color: #C00000;
+
+            @media screen and (max-width: @max-width1) {
+              line-height: 28px;
+              font-size: 32px;
+            }
+            @media screen and (max-width: @max-width2) {
+              line-height: 19px;
+              font-size: 23px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1270px) {
+
 }
