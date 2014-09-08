@@ -9,11 +9,11 @@ $this->pageTitle = $this->_app->name . ' | ' . (($this->_app->params['debug']) ?
 FrontHelper::o()->addLess('main');
 ?>
 <script>
-    $(function() {
-       var loading = new Loading(), mainPage = new MainPage();
+    $(function () {
+        var loading = new Loading(), mainPage = new MainPage();
+        loading.init();
 
-        $(window).load(function(){
-            loading.init();
+        $(window).load(function () {
             mainPage.init(<?=$ratio;?>);
             loading.hide();
         });
