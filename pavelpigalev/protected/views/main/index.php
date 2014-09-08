@@ -11,10 +11,10 @@ FrontHelper::o()->addLess('main');
 <script>
     $(function() {
        var loading = new Loading(), mainPage = new MainPage();
-        loading.init();
-        mainPage.init(<?=$ratio;?>);
 
         $(window).load(function(){
+            loading.init();
+            mainPage.init(<?=$ratio;?>);
             loading.hide();
         });
     });
