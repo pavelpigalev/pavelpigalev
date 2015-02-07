@@ -7,7 +7,7 @@ class MainController extends MyController
     {
         $this->layout = '//layouts/index-layout';
 
-        $this->_app->cache->delete('mainPageCache');
+//        $this->_app->cache->delete('mainPageCache');
 
         $cache = $this->_app->cache->get('mainPageCache');
 
